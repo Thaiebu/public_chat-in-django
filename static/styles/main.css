@@ -13,9 +13,7 @@ button {
     background-color: #24a0ed;
     font-size: 18px;
     color: #fff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 1em;
+    padding: 10px 10px;
 }
 
 #post_form input {
