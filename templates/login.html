@@ -1,0 +1,24 @@
+{% extends "main.html" %} {% load static %} {% block content %}
+
+<div>
+    <form id="login">
+        <p>Enter your user name</p>
+        <input type="text" name="username">
+    </form>
+</div>
+
+<script>
+    let form = document.getElementById("login")
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        let username = e.target.username.value
+        localStorage.setItem('username', username)
+
+        if (username) {
+            window.location = '/'
+        }
+    })
+</script>
+
+{% endblock %}
